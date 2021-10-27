@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultório Digital</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+        :root {
+            --blue: #003E8C;
+            --gray: #D1D1D1;
+            --strong-gray: #333333;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.8rem;
+            line-height: 1.1rem;
+            color: var(--strong-gray);
+        }
+
+        /* geral */
+
+        header {
+            min-height: 15vh;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.9rem;
+        }
+
+        main {
+            min-height: 60vh;
+        }
+
+        footer {
+            min-height: 10vh;
+        }
+
+        .center {
+            width: 50%;
+            margin: auto;
+        }
+
+        /* header */
+
+        .header-container {
+            min-height: 80px;
+            text-align: center;
+            border-bottom: 0.1rem solid var(--gray);
+            padding-bottom: 10px;
+        }
+
+        .header-container img {
+            min-width: 7vw;
+        }
+
+        .header-container h1,
+        .header-container h1 span {
+            font-size: 18px;
+            color: var(--blue);
+        }
+
+        .header-container h1 span {
+            font-weight: 400;
+        }
+
+        /* receiver */
+
+        .receiver-container {
+            min-height: 60px;
+        }
+
+        /* exams */
+
+        .exams-container {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .exams-info {
+            min-height: 22vh;
+        }
+
+        .exams-container button {
+            min-width: 100%;
+            min-height: 5vh;
+            background-color: var(--blue);
+            color: #fff;
+            font-weight: 600;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .exams-container h2 {
+            margin-bottom: 0.9rem;
+        }
+
+        .exams-container ul {
+            margin-left: 1.2rem;
+        }
+
+        .exams-container ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .exams-signature {
+            min-height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .exams-signature img {
+            min-width: 5vw;
+        }
+
+        .exams-blank {
+            min-height: 10vh;
+        }
+
+        /* Footer */
+        .color p,
+        .color a {
+            color: var(--blue);
+        }
+
+        .color a {
+            font-weight: 700;
+        }
+
+        .footer-page {
+            text-align: center;
+            font-weight: 600;
+            padding: 0.5rem 0;
+            border-bottom: 0.1rem solid var(--gray)
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            vertical-align: middle;
+            padding: 1.2rem 0;
+        }
+
+        .footer-logo img {
+            min-width: 9vw;
+        }
+
+        @media (max-width: 768px) {
+
+            .header-container img {
+                min-width: 10vw;
+            }
+
+            .exams-signature img {
+                min-width: 10vw;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .footer-logo img {
+                min-width: 20vw;
+                margin-top: 20px;
+            }
+
+        }
+
+        @media (max-width: 425px) {
+
+            .header-container img {
+                min-width: 15vw;
+            }
+
+            .center {
+                width: 100%;
+                padding: 2rem;
+            }
+
+            .footer-logo img {
+                min-width: 30vw;
+            }
+        }
+    </style>
+    <header>
+        <section class="header-container center">
+            <img src="./resources/logotipo-sirio-libanes-1.png" alt="Logo Hospital Sírio-Libanês" />
+            <h1>Consultório <span>Digital</span></h1>
+        </section>
+    </header>
+    <main>
+        <section class="receiver-container center">
+            <h2>São Paulo, 03 de agosto de 2021</h2>
+            <p>Para: Thiago de Barros Silva</p>
+            <p>Data de Nascimento: 01/01/1921</p>
+            <p>CPF: 222.222.222.22</p>
+        </section>
+
+        <section class="exams-container center">
+            <div class="exams-info">
+                <button>Imagem</button>
+
+                <h2>HD: Acidente Vascular Cerebral</h2>
+                <ul>
+                    <li>TC Crânio</li>
+                    <li>Angiografia cerebral</li>
+                </ul>
+            </div>
+            <div class="exams-signature">
+                <img src="./resources/assinatura-sirio-libanes.png" alt="Assinatura do Médico">
+            </div>
+            <div class="exams-blank"> </div>
+        </section>
+
+    </main>
+    <footer>
+        <section class="footer-page color center">
+            <p>Página 1</p>
+        </section>
+        <section class="footer-content center">
+
+            <div class="color">
+                <p>
+                    Rua Adma Jafet, 91
+                    CEP:01308-050
+                    São Paulo-SP
+                    Tel.: +55 (11) 3155-0200
+                </p>
+                <a href="https://www.hospitalsiriolibanes.org.br/Paginas/nova-home.aspx">
+                    www.hospitalsiriolibanes.org.br
+                </a>
+            </div>
+            <div class="footer-logo">
+                <img src="./resources/logotipo-sirio-libanes-2.png" alt="Logo Hospital Sírio-Libanês">
+            </div>
+        </section>
+
+    </footer>
+</body>
+
+</html>
